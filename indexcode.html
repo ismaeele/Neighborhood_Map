@@ -53,7 +53,7 @@
         background: #fff;
         border: 1px solid #999;
         border-radius: 3px;
-        height: 100%;
+        max-height: 100%;
         line-height: 35px;
         padding: 10px 10px 30px 10px;
         text-align: left;
@@ -128,22 +128,22 @@
                      
           </tr>
           <tr>
-            <td style='border-radius: 18px 18px 18px 0px;'><a href="#">LSV</a></td>
+            <td style='border-radius: 18px 18px 18px 0px;'><button id="Btn1">LSV</button></td>
           </tr>
           <tr>
-            <td style='border-radius: 18px 18px 18px 0px;'><a href="#">Starbucks Market Fair</a></td>
+            <td style='border-radius: 18px 18px 18px 0px;'><button id="Btn2">Starbucks Market Fair</button></td>
           </tr>
           <tr>
-            <td style='border-radius: 18px 18px 18px 0px;'><a href="#">Starbucks Nassau Street</a></td>
+            <td style='border-radius: 18px 18px 18px 0px;'><button id="Btn3">Starbucks Nassau Street</button></td>
           </tr>
           <tr>
-            <td style='border-radius: 18px 18px 18px 0px;'><a href="#">Princeton University</a></td>
+            <td style='border-radius: 18px 18px 18px 0px;'><button id="Btn4">Princeton University</button></td>
           </tr>
           <tr>
-            <td style='border-radius: 18px 18px 18px 0px;'><a href="#">Forrestal Village</a></td>
+            <td style='border-radius: 18px 18px 18px 0px;'><button id="Btn5">Forrestal Village</button></td>
           </tr>
           <tr>
-            <td style='border-radius: 18px 18px 18px 0px;'><a href="#">Princeton Public Library</a></td>
+            <td style='border-radius: 18px 18px 18px 0px;'><button id="Btn6">Princeton Public Library</button></td>
           </tr>
         </table>
           <input id="show-listings" type="button" value="Show Listings">
@@ -294,6 +294,12 @@
           mapTypeControl: false
         });
 
+        //This button will signify the map marker the button corresponds to
+        document.getElementById("myBtn1").addEventListener("click", functtion(){
+          document.getElementById("markers");
+
+        
+        }
         // This autocomplete is for use in the search within time entry box.
         var timeAutocomplete = new google.maps.places.Autocomplete(
             document.getElementById('search-within-time-text'));
