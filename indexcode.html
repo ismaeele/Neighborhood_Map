@@ -5,10 +5,10 @@
       html,
       body {
         font-family: Arial, sans-serif;
-        height: 100%;
+        max-height: 100%;
         margin: 0;
         padding: 0;
-        background-color: #000000;
+        background-color: #8E44AD;
       }
 
       .container {
@@ -21,7 +21,7 @@
       }
 
       h1 {
-        color: #525454;
+        color: #F4D03F;
         font-size: 22px;
         margin: 0 0 10px 0;
         text-align: center;
@@ -50,7 +50,7 @@
       }
 
       .options-box {
-        background: #fff;
+        background: #8E44AD;
         border: 1px solid #999;
         border-radius: 3px;
         max-height: 100%;
@@ -128,22 +128,22 @@
                      
           </tr>
           <tr>
-            <td style='border-radius: 18px 18px 18px 0px;'><button id="Btn1">LSV</button></td>
+            <td style='border-radius: 18px 18px 18px 0px;'><a href="">LSV</td>
           </tr>
           <tr>
-            <td style='border-radius: 18px 18px 18px 0px;'><button id="Btn2">Starbucks Market Fair</button></td>
+            <td style='border-radius: 18px 18px 18px 0px;'><a href="">Starbucks Market Fair</a></td>
           </tr>
           <tr>
-            <td style='border-radius: 18px 18px 18px 0px;'><button id="Btn3">Starbucks Nassau Street</button></td>
+            <td style='border-radius: 18px 18px 18px 0px;'><a href="">Starbucks Nassau Street</a></td>
           </tr>
           <tr>
-            <td style='border-radius: 18px 18px 18px 0px;'><button id="Btn4">Princeton University</button></td>
+            <td style='border-radius: 18px 18px 18px 0px;'><a href="">Princeton University</a></td>
           </tr>
           <tr>
-            <td style='border-radius: 18px 18px 18px 0px;'><button id="Btn5">Forrestal Village</button></td>
+            <td style='border-radius: 18px 18px 18px 0px;'><a href="">Forrestal Village</a></td>
           </tr>
           <tr>
-            <td style='border-radius: 18px 18px 18px 0px;'><button id="Btn6">Princeton Public Library</button></td>
+            <td style='border-radius: 18px 18px 18px 0px;'><a href="">Princeton Public Library</a></td>
           </tr>
         </table>
           <input id="show-listings" type="button" value="Show Listings">
@@ -200,23 +200,6 @@
       var placeMarkers = [];
 
       //Create a search box with a filter feature to filter the favorite locations
-      function myFunction() {
-        var input, filter, table, tr, td, i;
-          input = document.getElementById("myInput");
-          filter = input.value.toUpperCase();
-          table = document.getElementById("myTable");
-          tr = table.getElementsByTagName("tr");
-          for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[0];
-            if (td) {
-              if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-              } else {
-                tr[i].style.display = "none";
-              }
-            }       
-          }
-        }
       function initMap() {
         // Create a styles array to use with the map.
         var styles = [
